@@ -1,0 +1,204 @@
+h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    position: relative;
+    bottom: 40vh;
+}
+
+h2 {
+    color: white;
+}
+
+h6 {
+    border: 1px solid lightgray;
+    background-color: rgb(238, 238, 238);
+    position: relative;
+}
+
+div>p {
+    margin-bottom: 3px;
+}
+
+.date-span {
+    position: relative;
+    left: 3vw;
+}
+
+#navbar {
+    background-color: black;
+}
+
+#navlink-color{
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+    grid-template-rows: 4fr 1fr 1.5fr 1.5fr 1.5fr 2fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title_text_img title_text_img title_text_img title_text_img title_text_img"
+      ". date_header date_header date_header ."
+      ". b-3 c-3 d-3 ."
+      ". b-4 c-4 d-4 ."
+      ". b-5 c-5 d-5 ."
+      ". b-6 c-6 d-6 .";
+    margin: 0;
+    padding: 0;
+}
+  
+.title_text_img {
+  grid-area: title_text_img;
+}
+
+.title_text_img img{
+    width: 100%;
+}
+
+.date_header {
+    grid-area: date_header;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.b-3 {
+    grid-area: b-3;
+}
+
+.raisin {
+width: 60%;
+position: relative;
+left: 20%;
+}
+
+.read-more-button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-family: Times New Roman;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: #F6AB3D;
+    border: solid #000000 1px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: 4vh;
+    left: 5vw;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .read-more-button:hover {
+    background: #e2a81f;
+    border: solid #000000 1px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-decoration: none;
+ }
+
+.c-3{
+    grid-area: c-3;
+}
+  
+.d-3{
+    grid-area: d-3;
+}
+  
+.b-4{
+    grid-area: b-4;
+}
+  
+.c-4{
+    grid-area: c-4;
+}
+  
+.d-4{
+    grid-area: d-4;
+}
+  
+.b-5{
+    grid-area: b-5;
+}
+  
+.c-5{
+    grid-area: c-5;
+}
+  
+.d-5{
+    grid-area: d-5;
+}
+  
+.b-6{
+    grid-area: b-6;
+}
+  
+.c-6{
+    grid-area: c-6;
+}
+  
+.d-6{
+    grid-area: d-6;
+}
+
+.b-3, .b-4, .b-5, .b-6, .c-3, .c-4, .c-5, .c-6, .d-3, .d-4, .d-5, .d-6 {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 70px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 0fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 18px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "photo . info shows social";
+  background-color: black;
+  padding: 3%;
+}
+
+.footer-grid a{
+    color: white;
+    text-decoration: none;
+    font-size: 83%;
+}
+
+.photo {
+    grid-area: photo; 
+}
+
+.chicago-map{
+    width: 80%;
+    padding: 7% 2% 10% 15%;
+}
+
+.info {
+    grid-area: info; 
+}
+
+.shows {
+    grid-area: shows; 
+}
+
+.social {
+    grid-area: social; 
+}
+
+.bi-geo-alt-fill {
+    color: goldenrod;
+}
+
+.bi-envelope{
+    color: goldenrod;
+}
+
+.bi-phone{
+    color: goldenrod;
+}
